@@ -3,9 +3,17 @@
         <!-- Load the latest Swagger UI code and style from npm using unpkg.com -->
         <script src="https://unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
         <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@3/swagger-ui.css"/>
-        <title>My New API</title>
+        
+        <meta charset="utf-8"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
+	    <title>Malwarebytes APIs</title>
     </head>
     <body>
+        
+        <redoc spec-url='http://localhost:5000/api/v1/docs/swagger.json'></redoc>
+        <script src="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js"> </script>
+        
         <div id="swagger-ui"></div> <!-- Div to hold the UI component -->
         <script>
             window.onload = function () {
